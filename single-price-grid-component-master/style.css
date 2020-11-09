@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-white: white;
+    --clr-lightgray: hsl(204, 43%, 93%);
+    --clr-grayishblue: hsl(218, 22%, 67%);
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-brightyellow: hsl(71, 73%, 54%);
+    --clr-lightcyan: #4abebd;
+}
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    background-color: var(--clr-lightgray);
+    margin-top: 10%;
+ }
+main{
+    display: grid;
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3";
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    background-color: var(--clr-white);
+    border-radius: 5px;
+    width:80%;
+    margin:0 auto;
+    
+ }
+ .container1{
+    grid-area: section1;
+ }
+ .container2{
+    grid-area: section2;
+    background-color: var(--clr-cyan);
+}
+.container3{
+    grid-area: section3;
+    background-color: var(--clr-lightcyan);
+}
+.content1,
+.content2,
+.content3{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+.container1 h1{
+    color: var(--clr-cyan);
+}
+.container1 h2{
+    color: var(--clr-brightyellow);
+    font-size: 18px;
+}
+.container1 p{
+    color: var(--clr-grayishblue);
+    line-height: 2.0;
+}
+.container2{
+    color: var(--clr-white);
+    font-weight: normal;
+}
+.container2 h2{
+    font-size: 20px;
+    font-weight: normal;
+}
+.container2 b{
+    font-size: 30px;
+    font-weight: normal;
+}
+.container2 span{
+    margin-left: 10px;
+    opacity: 0.7;
+}
+.container2 button{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: var(--clr-brightyellow);
+    border: none;
+    border-radius: 5px;
+    color: var(--clr-white);
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}
+.container3{
+    color: var(--clr-white);
+    
+}
+.container3 p{
+    font-size: 14px;
+    opacity: 0.7;
+    line-height: 1.6;
+}
+.container3 h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+@media only screen and (min-width:800px){
+    main{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 10%;
+        grid-template-areas: 
+        "section1 section1"
+        "section2 section3";
+     }
+}
+@media only screen and (min-width:1000px){
+    main{
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10%;
+        grid-template-areas: 
+        "section1 section1"
+        "section2 section3";
+     }
+}
