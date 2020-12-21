@@ -1,0 +1,17 @@
+
+@import './utilities';
+
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $mainfont;
+    font-size: $mainfontsize;
+    background-color: $clrlightgray;
+    margin-top: 10%; 
+}
+@import './main';

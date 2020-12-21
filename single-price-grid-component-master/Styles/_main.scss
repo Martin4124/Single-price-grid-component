@@ -1,0 +1,105 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "section1"
+    "section2"
+    "section3";
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: $clrwhite;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+  .container1 {
+    grid-area: section1;
+    h1 {
+      color: $clrcyan;
+    }
+    h2 {
+      color: $clryellow;
+      font-size: 18px;
+    }
+    p {
+      color: $clrgrayishblue;
+      line-height: 2;
+    }
+  }
+  .container2 {
+    grid-area: section2;
+    background-color: $clrcyan;
+    color: $clrwhite;
+    font-weight: normal;
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+    }
+    b {
+      font-size: 30px;
+      font-weight: normal;
+    }
+    span {
+      margin-left: 10px;
+      opacity: 0.7;
+    }
+    button {
+      width: 100%;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background-color: $clryellow;
+      border: none;
+      border-radius: 5px;
+      color: $clrwhite;
+      font-size: 16px;
+      font-weight: bold;
+      box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+      &:hover {
+        opacity: 0.9;
+        padding: 14px;
+        transform: scale(0.99);
+      }
+    }
+  }
+  .container3 {
+    grid-area: section3;
+    background-color: $clrlightcyan;
+    color: $clrwhite;
+    p {
+      font-size: 14px;
+      opacity: 0.7;
+      line-height: 1.6;
+    }
+    h2 {
+      font-weight: normal;
+      font-size: 20px;
+    }
+  }
+}
+.container1,
+.container2,
+.container3 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+@media only screen and (min-width: 800px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+    grid-template-areas:
+      "section1 section1"
+      "section2 section3";
+  }
+}
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+    grid-template-areas:
+      "section1 section1"
+      "section2 section3";
+  }
+}

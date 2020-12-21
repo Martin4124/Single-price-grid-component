@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background-color: #e5eff5;
+  margin-top: 10%;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "section1" "section2" "section3";
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main .container1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: section1;
+}
+
+main .container1 h1 {
+  color: #2ab2af;
+}
+
+main .container1 h2 {
+  color: #c0df34;
+  font-size: 18px;
+}
+
+main .container1 p {
+  color: #98a6bd;
+  line-height: 2;
+}
+
+main .container2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: section2;
+  background-color: #2ab2af;
+  color: white;
+  font-weight: normal;
+}
+
+main .container2 h2 {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+main .container2 b {
+  font-size: 30px;
+  font-weight: normal;
+}
+
+main .container2 span {
+  margin-left: 10px;
+  opacity: 0.7;
+}
+
+main .container2 button {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #c0df34;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+main .container2 button:hover {
+  opacity: 0.9;
+  padding: 14px;
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+main .container3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: section3;
+  background-color: #4abebd;
+  color: white;
+}
+
+main .container3 p {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.6;
+}
+
+main .container3 h2 {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.container1,
+.container2,
+.container3 {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+}
+
+@media only screen and (min-width: 800px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10%;
+        grid-template-areas: "section1 section1" "section2 section3";
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  main {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10%;
+        grid-template-areas: "section1 section1" "section2 section3";
+  }
+}
+/*# sourceMappingURL=style.css.map */
